@@ -1,0 +1,12 @@
+{
+  "name": "jpnocr",
+  "displayName": "jpnocr",
+  "expo": {
+    "name": "jpnocr",
+    "slug": "jpnocr",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
