@@ -5,6 +5,7 @@ import { StyleSheet, ScrollView, Text, View, TouchableOpacity, Image } from 'rea
 import { NewsContext } from '../context/context';
 import { startLogin, startLogout } from "../actions/auth";
 import { AuthContext } from "../context/Auth";
+import { REACT_APP_SECRET_KEY } from '@env'
 
 export const Homepage = ({navigation}) => {
   const { newsArray, setNewsArray, newsTitle, setNewsTitle } = useContext(NewsContext)
@@ -12,7 +13,7 @@ export const Homepage = ({navigation}) => {
   const dispatch = useDispatch()
 
   const fetchUrl = async () => {
-    await fetch(`http://newsapi.org/v2/top-headlines?country=jp&apiKey=bc31e9bea5d2436685e04722f71bcca9`, { 
+    await fetch(`http://newsapi.org/v2/top-headlines?country=jp&apiKey=${REACT_APP_SECRET_KEY}`, { 
       method: 'GET',
   })
     .then((res) => res.json())
