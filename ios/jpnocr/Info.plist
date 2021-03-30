@@ -39,6 +39,12 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Give JPN_OCR permission to save photos</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Give JPN_OCR permission to access your camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Give JPN_OCR permission to use your microphone</string>
 	<key>UILaunchStoryboardName</key>
 	<string>SplashScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
